@@ -1,5 +1,4 @@
-const pdfjsLib = require("pdfjs-dist");
-
+import pdfjsLib from 'pdfjs-dist';
 const pdfFromPath = async (path) => {
     let doc = await pdfjsLib.getDocument(path).promise;
     let page1 = await doc.getPage(1);
